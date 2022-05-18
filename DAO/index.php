@@ -25,13 +25,30 @@ echo json_encode($usuarios);
 //$usuario = new Usuario();
 //$usuario->login("thiago", "123456");
 //echo $usuario;
-
-$aluno = new Usuario("aluno", "@luno");
+//Criando um novo usuário
+// $aluno = new Usuario("aluno", "@luno");
 
 // $aluno->setDeslogin("aluno");
 // $aluno->setDessenha("@luno");
 
-$aluno->insert();
+// $aluno->insert();
 
-echo $aluno;
+// echo $aluno;
+/*Alterar os dados do usuário
+// $usuario = new Usuario();
+
+// $usuario->loadById(8);
+
+// $usuario->update("professor", "123456");
+
+// echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
 ?>
