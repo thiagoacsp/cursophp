@@ -1,0 +1,20 @@
+{
+    "name": "thiagoac/composer",
+    "description": "Aula de PHP 7",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Thiagoac\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thiago Alves",
+            "email": "thiagoacsp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
